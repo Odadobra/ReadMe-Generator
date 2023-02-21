@@ -35,7 +35,7 @@ const questions = [
     //License
     {
         type: 'list',
-        choices: ['MIT', 'GPL', 'GNU', 'Bsd-2-Clause'],
+        choices: ['MIT', 'GPL 3.0', 'Eclipse', 'Bsd-2-Clause'],
         name: 'license',
         message: 'What is your project license type?'
     },
@@ -43,9 +43,17 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'Contribution Guidelines'
-    }
+        message: 'Contribution Information'
+    },
     //Tests
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Test Instructions'
+    },
+
+    //Github Username
+
 ];
 
 // function to write README file
