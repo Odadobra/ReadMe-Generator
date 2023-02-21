@@ -17,18 +17,19 @@ function licenseLogo(license) {
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ${licenseLogo(data.license)}
 
   ## Description
   ${data.description}
 
   ## Table of contents
- 1. [Description](#Description)
- 2. [Installation](#Installation)
- 3. [Usage](#Usage)
- 4. [License](#License)
- 5. [Contributing](#Contributing)
- 6. [Testing](#Testing)
- 7. [Questions](#Questions)
+ 1. [Description](#description)
+ 2. [Installation](#installation)
+ 3. [Usage](#usage)
+ 4. [License](#license)
+ 5. [Contributing](#contributing)
+ 6. [Testing](#testing)
+ 7. [Questions](#questions)
 
   ## Installation
   ${data.installation}
@@ -43,11 +44,11 @@ function generateMarkdown(data) {
   ${data.contributing}
 
   ## Testing
-  ${data.testing}
+  ${data.test}
 
   ## Questions
-  Visit my [Github](https://github.com/${data.username}) page for more information.
-  Alternatively, you can contact me on (${data.username})
+  Visit my [Github](https://github.com/${data.user}) page for more information.
+  Alternatively, you can contact me on (${data.email})
 
 `;
 }
